@@ -15,7 +15,7 @@ I spent quite some time to get the original downloader running, here is a step-t
   `$ apt install nodejs`
 
   `$ apt install npm`.
-- Several packages are needed, run the following commands
+- Several JavaScript packages are needed, run the following commands
 
   `$ npm install commander`
 
