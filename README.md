@@ -9,10 +9,12 @@ A simple yet much needed web crawler to download all albums on your [renren.com]
 (My operating system is __Ubuntu 18.04 LTS__)
 (我使用的操作系统是 __Ubuntu 18.04 LTS__)
 
-- Git clone this repository and cd to the local folder.
+- Git clone this repository and cd to the local folder
+  
   下载所有文件并cd至本地文件夹内
   
 - You need node.js and a JavaScript package manager, they can be installed with
+  
   用下列命令安装node.js和JavaScript包管理器
   
   ```sh
@@ -22,6 +24,7 @@ A simple yet much needed web crawler to download all albums on your [renren.com]
   ```
 
 - Several JavaScript packages are needed, run the following commands
+  
   用下列命令安装运行所需要的JavaScript组件
 
   ```sh
@@ -33,6 +36,7 @@ A simple yet much needed web crawler to download all albums on your [renren.com]
   ```
   
 - Obtain your renren account login information
+  
   获取人人账号登录信息
 
   ```sh
@@ -40,6 +44,7 @@ A simple yet much needed web crawler to download all albums on your [renren.com]
   ```
   
 - Type in the following command and it&apos;s time to get a drink and chill
+  
   开始下载照片，等待的时候可以点杯饮料放松一下 :)
 
   ```sh
