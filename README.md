@@ -9,12 +9,14 @@ A simple yet much needed tool to download all albums on your [renren.com](renren
 I spent quite some time to get the original downloader running, here is a step-to-step guide for you to use it. My operating system is Ubuntu 18.04 LTS.
 - Open your terminal, git clone this repository and cd to the local folder.
 - You need node.js and a JavaScript package manager, they can be installed with
+
 `$ apt update`
 
 `$ apt install nodejs`
 
 `$ apt install npm`.
 - Several packages are needed, run the following commands
+
 `$ npm install commander`
 
 `$ npm install axer`
@@ -25,8 +27,10 @@ I spent quite some time to get the original downloader running, here is a step-t
 
 `$ npm install readline-sync`.
 - Obtain your renren account login information
+
 `$ ./app.js -l -u yourusername -p yourpassword`.
 - Type in the following command and it&apos;s time to get a drink and chill
+
 `$ ./app.js -d -i youruserid`.
 
 ### Misc
