@@ -10,13 +10,19 @@ I spent quite some time to get the original downloader running, here is a step-t
 - Open your terminal, git clone this repository and cd to the local folder.
 - You need node.js and a JavaScript package manager, they can be installed with
 `$ apt update`
+
 `$ apt install nodejs`
+
 `$ apt install npm`.
 - Several packages are needed, run the following commands
 `$ npm install commander`
+
 `$ npm install axer`
+
 `$ npm install cheerio`
+
 `$ npm install node-rsa`
+
 `$ npm install readline-sync`.
 - Obtain your renren account login information
 `$ ./app.js -l -u yourusername -p yourpassword`.
