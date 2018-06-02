@@ -34,5 +34,5 @@ I spent quite some time to get the original downloader running, here is a step-t
   `$ ./app.js -d -i youruserid`.
 
 ### Misc
-- Photos are downloaded to the folder &quot;locals/youruserid/&quot; and organized by their correspoding albums.
+- Photos are downloaded to the folder &quot;locals/youruserid/&quot; and organized by their corresponding albums.
 - Today is Jun. 1, 2018 and the tool works like magic, but it will fail once renren changes how data is sent or encrypts their urls, so don't hesitate to try it as soon as possible.
