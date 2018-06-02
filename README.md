@@ -10,7 +10,9 @@ I spent quite some time to get the original downloader running, here is a step-t
 - Git clone this repository and cd to the local folder.
 - You need node.js and a JavaScript package manager, they can be installed with
 
-  `$ apt update`
+  ```sh
+  $ apt update
+  ```
 
   `$ apt install nodejs`
 
