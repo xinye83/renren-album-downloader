@@ -6,9 +6,9 @@ A simple yet much needed web crawler to download all albums on your [renren.com]
 - A quality of life update: added upload time of a photo to the file name, now the name has the format &quot;yyyymmdd_hhmm_photoid&quot;.
 
 ### Step-by-Step User Guide
-My operating system is __Ubuntu 18.04 LTS__ ，
+My operating system is Ubuntu 18.04 LTS
 
-我使用的操作系统是 __Ubuntu 18.04 LTS__
+我使用的操作系统是Ubuntu 18.04 LTS
 
 - Git clone this repository and cd to the local folder
   
