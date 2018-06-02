@@ -1,12 +1,12 @@
 # renren-album-downloader
-A simple yet much needed tool to download all albums on your [renren.com](renren.com) account. I&apos;ve never used JavaScript before and the codes are all based on the project [XueSeason/renren-album](https://github.com/XueSeason/renren-album), I only modified a little for some bug fixes and improvements.
+A simple yet much needed tool to download all albums on your [renren.com](renren.com) account. I&apos;ve never used JavaScript before and __the codes are all based on the project [XueSeason/renren-album](https://github.com/XueSeason/renren-album)__, I only modified a little for some bug fixes and improvements.
 
 ### What&apos;s Updated
 - The original downloader can only capture a maximum of 40 photos per album no matter how many more you have, this is due to dynamic loading of renren&apos;s webpage. The issue is fixed and now all photos will be downloaded.
 - A quality of life update: added upload time of a photo to the file name, now the name has the format &quot;yyyymmdd_hhmm_photoid&quot;.
 
 ### How to Use It
-I spent quite some time to get the original downloader running, here is a step-to-step guide for you to use it. My operating system is Ubuntu 18.04 LTS.
+I spent quite some time to get the original downloader running, here is a step-to-step guide for you to use it. My operating system is __Ubuntu 18.04 LTS__.
 - Open a terminal, git clone this repository and cd to the local folder.
 - You need node.js and a JavaScript package manager, they can be installed with
 
