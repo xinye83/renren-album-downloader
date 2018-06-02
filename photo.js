@@ -3,18 +3,12 @@ const cheerio = require('cheerio')
 const Request = require('axer').request
 const file = require('axer').file
 const config = require('./config')
-const fs = require('fs')
 
 async function getPhoto(album) {
   const cookieJarPath = path.resolve(config.storageDir, 'cookieJar.json')
   const request = new Request(cookieJarPath)
 
   const photoCount = album.photoCount
-
-// http://comment.renren.com/comment/xoa2?limit=10&desc=true&offset=0&replaceUBBLarge=true&
-//          type=album&entryId=909750576&entryOwnerId=280481951&&requestToken=465179088&_rtk=e77b102a
-// http://photo.renren.com/photo/280481951/album-324303603/bypage/ajax/v7?page=3&pageSize=20&requestToken=465179088&_rtk=e77b102a
-// http://photo.renren.com/photo/280481951/album-324303603/bypage/ajax/v7?page=4&pageSize=20&requestToken=465179088&_rtk=e77b102a
 
   // 获取相册内照片连接
   const albumResponse = await request.get(`http://photo.renren.com/photo/${album.ownerId}/album-${album.albumId}/v7`)
@@ -59,20 +53,6 @@ async function getPhoto(album) {
   // console.log(photoListInfo.photoList.length)
   // console.log('-----------------------------------------------------------------------------')
 
-  fs.appendFile(`log_${album.ownerId}`, "******************************\n", function (err) {
-    if (err) throw err;
-  });
-  fs.appendFile(`log_${album.ownerId}`, "Album name: " + album.albumName + "\n\n", function (err) {
-    if (err) throw err;
-  });
-  fs.appendFile(`log_${album.ownerId}`, "Photo count: " + photoCount + "\n", function (err) {
-    if (err) throw err;
-  });
-  fs.appendFile(`log_${album.ownerId}`, "# captured : " + photoListInfo.photoList.length + "\n\n", function (err) {
-    if (err) throw err;
-  });
-
-
   for (let i = 0; i < photoListInfo.photoList.length; i++) {
     const photo = photoListInfo.photoList[i]
     // 创建相册目录
@@ -116,10 +96,6 @@ async function getPhoto(album) {
 async function getAlbum(ownerId) {
   const cookieJarPath = path.resolve(config.storageDir, 'cookieJar.json')
   const request = new Request(cookieJarPath)
-
-  fs.writeFile(`log_${ownerId}`, "Downloading photos of user: " + ownerId + "\n\n", function (err) {
-    if (err) throw err;
-  });
 
   // 获取相册详情
   const albumlistResponse = await request.get(`http://photo.renren.com/photo/${ownerId}/albumlist/v7`)
