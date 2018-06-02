@@ -1,5 +1,4 @@
-# renren-album-downloader
-# 人人网相册下载工具
+# renren-album-downloader 人人网相册下载工具
 
 A simple yet much needed web crawler to download all albums on your [renren.com](renren.com) account. I&apos;ve never used JavaScript before and __the codes are all based on the project [XueSeason/renren-album](https://github.com/XueSeason/renren-album)__, I only modified a little for some bug fixes and improvements.
 
