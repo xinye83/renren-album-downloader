@@ -12,28 +12,31 @@ I spent quite some time to get the original downloader running, here is a step-t
 
   ```sh
   $ apt update
+  $ apt install nodejs
+  $ apt install npm
   ```
 
-  `$ apt install nodejs`
-
-  `$ apt install npm`.
 - Several JavaScript packages are needed, run the following commands
 
-  `$ npm install commander`
-
-  `$ npm install axer`
-
-  `$ npm install cheerio`
-
-  `$ npm install node-rsa`
-
-  `$ npm install readline-sync`.
+  ```sh
+  $ npm install commander
+  $ npm install axer
+  $ npm install cheerio
+  $ npm install node-rsa
+  $ npm install readline-sync
+  ```
+  
 - Obtain your renren account login information
 
-  `$ ./app.js -l -u yourusername -p yourpassword`.
+  ```sh
+  $ ./app.js -l -u yourusername -p yourpassword
+  ```
+  
 - Type in the following command and it&apos;s time to get a drink and chill
 
-  `$ ./app.js -d -i youruserid`.
+  ```sh
+  $ ./app.js -d -i youruserid
+  ```
 
 ### Misc
 - Photos are downloaded to the folder &quot;locals/youruserid/&quot; and organized by their corresponding albums.
