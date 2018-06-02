@@ -7,7 +7,7 @@ A simple yet much needed tool to download all albums on your [renren.com](renren
 
 ### How to Use It
 I spent quite some time to get the original downloader running, here is a step-to-step guide for you to use it. My operating system is __Ubuntu 18.04 LTS__.
-- Open a terminal, git clone this repository and cd to the local folder.
+- Git clone this repository and cd to the local folder.
 - You need node.js and a JavaScript package manager, they can be installed with
 
   `$ apt update`
