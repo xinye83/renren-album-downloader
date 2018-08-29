@@ -1,4 +1,4 @@
-# renren-album-downloader 人人网相册下载工具
+# renren-album-downloader
 
 A simple yet much needed web crawler to download all albums on your [renren.com](renren.com) account. I&apos;ve never used JavaScript before and __the codes are all based on the project [XueSeason/renren-album](https://github.com/XueSeason/renren-album)__, I only modified a little for some bug fixes and improvements.
 
@@ -9,15 +9,9 @@ A simple yet much needed web crawler to download all albums on your [renren.com]
 ### Step-by-Step User Guide
 My operating system is Ubuntu 18.04 LTS
 
-我使用的操作系统是Ubuntu 18.04 LTS
-
 - Git clone this repository and cd to the local folder
   
-  下载所有文件并cd至本地文件夹内
-  
 - You need node.js and a JavaScript package manager, they can be installed with
-  
-  用下列命令安装node.js和JavaScript包管理器
   
   ```sh
   $ apt update
@@ -26,8 +20,6 @@ My operating system is Ubuntu 18.04 LTS
   ```
 
 - Several JavaScript packages are needed, run the following commands
-  
-  用下列命令安装运行所需要的JavaScript组件
 
   ```sh
   $ npm install commander
@@ -38,16 +30,12 @@ My operating system is Ubuntu 18.04 LTS
   ```
   
 - Obtain your renren account login information
-  
-  获取人人账号登录信息
 
   ```sh
   $ ./app.js -l -u yourusername -p yourpassword
   ```
   
 - Type in the following command and it&apos;s time to get a drink and chill
-  
-  开始下载照片，等待的时候可以点杯饮料放松一下 :)
 
   ```sh
   $ ./app.js -d -i youruserid
